@@ -1,0 +1,19 @@
+<div class="card" [formGroup]="characterFormGroup">
+  <h5>Character</h5>
+  <div class="formgrid grid">
+    <div class="field col-12">
+      <input type="text" pInputText placeholder="name" formControlName="name" />
+    </div>
+    <div class="field col-12">
+      <input
+        type="text"
+        pInputText
+        placeholder="aliases"
+        formControlName="aliases"
+      />
+    </div>
+    <div class="field col-12">
+      <p-button label="Submit" (onClick)="onSubmit()"></p-button>
+    </div>
+  </div>
+</div>
